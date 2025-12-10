@@ -1,5 +1,7 @@
 from utils.colors import *
+from utils.clear_console import clear_console
 from features.search import perform_search
+
 def menu():
 
     file_path = "data/spotify_and_youtube_2024.csv"
@@ -29,7 +31,8 @@ def menu():
             pass 
 
         elif opcion == "5":
-            print("Musicdatamanager finalizado...")
+            input("Musicdatamanager finalizado...")
+            clear_console()
             break
 
         else:
