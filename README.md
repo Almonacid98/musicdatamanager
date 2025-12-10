@@ -5,6 +5,14 @@ Incluye búsqueda avanzada, inserción de registros con validaciones, estadísti
 
 ---
 
+## 👥 Integrante
+
+| Integrante |
+|-----------|
+| [<img src="https://avatars.githubusercontent.com/u/49103419?v=4" width="115"><br><sub>Almonacid Gabriel</sub>](https://github.com/Almonacid98) |
+
+---
+
 ## 🚀 Funcionalidades principales
 
 ### 🔍 Buscar por título o artista
@@ -65,11 +73,3 @@ Al seleccionar un artista se muestra:
 - Expresiones regulares (Regex)
 - Conversión y formateo de tiempos
 - Estructuras de datos y ordenamiento
-  
----
-
-## 👥 Integrante
-
-| Integrante |
-|-----------|
-| [<img src="https://avatars.githubusercontent.com/u/49103419?v=4" width="115"><br><sub>Almonacid Gabriel</sub>](https://github.com/Almonacid98) |
