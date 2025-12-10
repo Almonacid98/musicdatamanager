@@ -70,4 +70,6 @@ Al seleccionar un artista se muestra:
 
 ## 👥 Integrante
 
-| [<img src="https://avatars.githubusercontent.com/u/49103419?v=4" width=115><br><sub>Almonacid Gabriel</sub>](https://github.com/Almonacid98) |
+| Integrante |
+|-----------|
+| [<img src="https://avatars.githubusercontent.com/u/49103419?v=4" width="115"><br><sub>Almonacid Gabriel</sub>](https://github.com/Almonacid98) |
