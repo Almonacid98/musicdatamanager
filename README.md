@@ -60,14 +60,12 @@ Al seleccionar un artista se muestra:
 ---
 
 ## 🛠️ Tecnologías y herramientas
-- Python / Java / C++ (dependiendo del lenguaje que utilices en tu implementación)
+- Python
 - Manejo de archivos `.csv`
 - Expresiones regulares (Regex)
 - Conversión y formateo de tiempos
 - Estructuras de datos y ordenamiento
   
-> *Esta sección podés ajustarla una vez que confirmes las librerías y el lenguaje final.*
-
 ---
 
 ## 👥 Integrante
