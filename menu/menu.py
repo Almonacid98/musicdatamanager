@@ -1,6 +1,7 @@
 from utils.colors import *
 from utils.clear_console import clear_console
 from features.search import perform_search
+from features.top_songs import show_top10_by_artist
 
 def menu():
 
@@ -22,7 +23,7 @@ def menu():
             perform_search()
 
         elif opcion == "2":
-            pass
+            show_top10_by_artist()
 
         elif opcion == "3":
             pass
