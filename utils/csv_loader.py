@@ -1,6 +1,6 @@
-import csv  # Importar módulo para manejo de archivos CSV
-import re  # Importar módulo para expresiones regulares
-from datetime import timedelta  # Importar timedelta para manejo de duraciones
+import csv 
+import re  
+from datetime import timedelta  
 import pathlib
 from dataclasses import dataclass
 
@@ -14,11 +14,8 @@ class SongsDto:
     likes: int
     uri: str
     url: str
-
+# Carga el csv y devuelve una lista de objetos SongsDto
 def load_dataset(path: str = None) -> list:
-        """
-        Carga el CSV desde la carpeta /data y devuelve una lista de SongsDto.
-        """
         songs = []
         csv_path = (
         pathlib.Path(__file__).resolve().parent.parent 
@@ -52,26 +49,18 @@ def load_dataset(path: str = None) -> list:
         except Exception as e:
             print(f"[ERROR] No se pudo leer el archivo CSV: {e}")
             exit(1)
-        
-# -------------------------------------------------------------
 # Cargar canciones como diccionarios
-# -------------------------------------------------------------
 def load_songs(file_path: str = None) -> list:
-        """
-        Carga canciones desde un archivo CSV y devuelve una lista de diccionarios.
-        Si no se pasa file_path, toma el CSV desde la carpeta /data.
-        """
+
         songs = []
 
-        # Si no se especifica un path, usar el archivo dentro de /data
+        # Si no se especifica un path, usa el archivo dentro de /data
         if file_path is None:
             file_path = (
             pathlib.Path(__file__).resolve().parent.parent 
             / "data" 
             / "spotify_and_youtube 2024.csv"
         )
-
-
         try:
             with open(file_path, "r", encoding="utf-8") as file:
                 csv_reader = csv.DictReader(file)

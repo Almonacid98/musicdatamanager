@@ -1,9 +1,8 @@
 from utils.csv_loader import load_songs
 from utils.clear_console import clear_console
 from utils.format_duration import format_duration
-
+#Filtro por artista
 def filter_songs_by_artist(songs, artist_name):
-    """Filtra canciones por artista."""
     result = []
 
     for song in songs:
@@ -14,8 +13,6 @@ def filter_songs_by_artist(songs, artist_name):
 
 
 def build_top_songs(songs, artist_name):
-    """Construye la lista con datos"""
-
     top_songs = []
     for song in songs:
 
@@ -32,16 +29,13 @@ def build_top_songs(songs, artist_name):
 
     return top_songs
 
-
+#Orden de canciones por reproducciones (views) de mayor a menor
 def sort_by_views(songs):
-    """Ordena canciones por reproducciones."""
     return sorted(songs, key=lambda x: x["views"], reverse=True)
 
-# Función (la que llama el menú)
+# Función principal para mostrar el Top 10 de canciones por artista
 
 def show_top10_by_artist():
-    """Muestra el Top 10 de canciones por artista."""
-
     artist_name = input("Ingrese el nombre del artista: ").strip()
     songs = load_songs()
 

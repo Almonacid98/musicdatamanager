@@ -4,9 +4,6 @@ from datetime import timedelta
 
 
 def search_song_by_title_or_artist(query, songs):
-    """
-    Devuelve canciones que coincidan con el artista o título.
-    """
     matches = []
 
     for song in songs:
@@ -16,7 +13,7 @@ def search_song_by_title_or_artist(query, songs):
         if query.lower() in artist.lower() or query.lower() in title.lower():
             matches.append(song)
 
-    # función auxiliar ordenar por Stream
+    # Orden por streams (de mayor a menor)
     def get_stream_value(song):
         try:
             return int(float(song.get("Stream", 0)))
@@ -26,10 +23,7 @@ def search_song_by_title_or_artist(query, songs):
     matches.sort(key=get_stream_value, reverse=True)
     return matches
 
-
-# -------------------------------------------------------
 # Convertir milisegundos a formato HH:MM:SS
-# -------------------------------------------------------
 def format_duration(ms):
     """Convierte milisegundos a formato HH:MM:SS."""
     try:

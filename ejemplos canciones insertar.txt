@@ -1,0 +1,42 @@
+Título: Creep
+Artista: Radiohead
+Álbum: Pablo Honey
+URL Spotify: https://open.spotify.com/track/70LcF31zb1H0PyJoS1Sx1r
+URI Spotify: spotify:track:70LcF31zb1H0PyJoS1Sx1r
+Duración (ms): 238640
+URL YouTube: https://www.youtube.com/watch?v=XFkzRNyygfk
+Likes: 3500000
+Views: 180000000
+
+
+Título: As It Was
+Artista: Harry Styles
+Álbum: Harry's House
+URL Spotify: https://open.spotify.com/track/4LRPiXqCikLlN15c3yImP7
+URI Spotify: spotify:track:4LRPiXqCikLlN15c3yImP7
+Duración (ms): 167303
+URL YouTube: https://www.youtube.com/watch?v=H5v3kku4y6Q
+Likes: 5200000
+Views: 250000000
+
+Título: Midnight City
+Artista: M83
+Álbum: Hurry Up, We're Dreaming
+URL Spotify: https://open.spotify.com/track/2uY3yefYq6Zf7y2hRYZ2Zq
+URI Spotify: spotify:track:2uY3yefYq6Zf7y2hRYZ2Zq
+Duración (ms): 244000
+URL YouTube: https://www.youtube.com/watch?v=dX3k_QDnzHE
+Likes: 1200000
+Views: 98000000
+
+
+
+Título: Cancion Falsa
+Artista: Artista Inventado
+Álbum: Album Fake
+URL Spotify: spotify.com/track/123456
+URI Spotify: spotify:track:INVALIDURI
+Duración (ms): 3:45
+URL YouTube: https://youtube.com/creep
+Likes: 50000
+Views: 1000
