@@ -1,0 +1,4 @@
+Artist,Url_spotify,Track,Album,Uri,Duration_ms,Url_youtube,Views,Likes
+Gorillaz,spotify.com/track/123,Feel Good Inc.,Demon Days,spotify:track:123,abc,https://youtube.com/watch?v=HyHNuVaZJ-k,1000,2000
+Metallica,https://open.spotify.com/track/4qgkQGv8zH,Enter Sandman,Black Album,spotify:track:INVALIDURI,331000,https://www.youtube.com/watch?v=CD-E-LDc384,500000,100000
+Radiohead,https://open.spotify.com/track/4uLU6hMCjMI75M1A2tKUQC,Creep,Pablo Honey,spotify:track:4uLU6hMCjMI75M1A2tKUQC,238000,https://youtube.com/creep,1000000,500000
