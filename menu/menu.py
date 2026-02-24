@@ -3,6 +3,7 @@ from utils.clear_console import clear_console
 from features.search import perform_search
 from features.top_songs import show_top10_by_artist
 from features.add_song import option_add_song
+from features.artist_info import show_artist_info
 def menu():
 
     file_path = "data/spotify_and_youtube_2024.csv"
@@ -29,7 +30,7 @@ def menu():
             option_add_song()
 
         elif opcion == "4":
-            pass 
+            show_artist_info()
 
         elif opcion == "5":
             input("Musicdatamanager finalizado...")
