@@ -76,9 +76,6 @@ def add_song_manual(file_path):
 
     append_row(file_path, new_song)
     print("Canción agregada correctamente")
-    clear_console()
-
-
 
 #Importar canciones desde otro CSV.
 
