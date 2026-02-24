@@ -1,4 +1,5 @@
 import pathlib
+from pathlib import Path
 from features.csv_manager import manager_csv
 from utils.clear_console import clear_console
 from utils.csv_utils import find_last_index, append_row
@@ -104,11 +105,28 @@ def option_add_song():
         add_song_manual(main_csv_path)
 
     elif choice == "2":
-        new_csv = input("Ruta del CSV a importar: ").strip()
-        add_songs_from_csv(new_csv)
+        new_csv = input("Nombre del CSV a importar: ").strip()
 
+        if not new_csv.lower().endswith(".csv"):
+            print("El archivo no tiene extensión .csv")
+            input("Presione una tecla para continuar...")
+            clear_console()
+            return
+            
+        csv_path = (
+            Path(__file__).resolve().parent.parent
+            / "data"
+            / new_csv
+        )
+        if not csv_path.exists():
+            print("El archivo CSV no existe en la carpeta data.")
+            input("Presione una tecla para continuar...")
+            clear_console()
+            return
+            
+        add_songs_from_csv(str(csv_path))
     else:
-        print("Opción inválida, no es un csv el archivo que se intenta importar.")
+        print("Opción inválida")
 
     input("\nPresione una tecla para volver al menú...")
     clear_console()
