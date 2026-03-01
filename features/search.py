@@ -1,5 +1,6 @@
 from utils.csv_loader import load_songs
 from utils.clear_console import clear_console
+from utils.format_duration import format_duration
 from datetime import timedelta
 
 
@@ -22,22 +23,6 @@ def search_song_by_title_or_artist(query, songs):
 
     matches.sort(key=get_stream_value, reverse=True)
     return matches
-
-# Convertir milisegundos a formato HH:MM:SS
-def format_duration(ms):
-    """Convierte milisegundos a formato HH:MM:SS."""
-    try:
-        ms = int(float(ms))  # FIX → permite "222640.0"
-        duration = timedelta(milliseconds=ms)
-
-        hours, remainder = divmod(duration.seconds, 3600)
-        minutes, seconds = divmod(remainder, 60)
-
-        return f"{hours:02}:{minutes:02}:{seconds:02}"
-
-    except Exception:
-        return "00:00:00"
-
 
 def perform_search():
     query = input("Ingrese el título o artista a buscar: ")
