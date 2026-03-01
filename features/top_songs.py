@@ -15,23 +15,24 @@ def filter_songs_by_artist(songs, artist_name):
     return result
 
 
-def build_top_songs(songs, artist_name):
+def build_top_songs(songs):
     top_songs = []
+
     for song in songs:
 
+        artist = song.get("Artist", "Unknown")
         track = song.get("Track", "Unknown")
         duration = format_duration(song.get("Duration_ms", 0))
         views = float(song.get("Views", 0) or 0)
 
         top_songs.append({
-            "artist": artist_name,
+            "artist": artist,
             "track": track,
             "duration": duration,
             "views": views
         })
 
     return top_songs
-
 #Orden de canciones por reproducciones (views) de mayor a menor
 def sort_by_views(songs):
     return sorted(songs, key=lambda x: x["views"], reverse=True)
