@@ -1,0 +1,7 @@
+Artist,Url_spotify,Track,Album,Uri,Duration_ms,Url_youtube,Views,Likes
+Coldplay,https://open.spotify.com/track/3AJwUDP919kvQ9QcozQPxg,Yellow,Parachutes,spotify:track:3AJwUDP919kvQ9QcozQPxg,266773,https://www.youtube.com/watch?v=yKNxeF4KMsY,1500000000,12000000
+Adele,https://open.spotify.com/track/4kflIGfjdZJW4ot2ioixTB,Hello,25,spotify:track:4kflIGfjdZJW4ot2ioixTB,295502,https://www.youtube.com/watch?v=YQHsXMglC9A,3000000000,18000000
+Bad Artist,https://open.spotify.com/track/INVALID,Song,Album,spotify:track:INVALID,200000,https://www.youtube.com/watch?v=invalid,1000,500
+Ed Sheeran,https://open.spotify.com/track/7qiZfU4dY1lWllzX7mPBI3,Shape of You,Divide,spotify:track:7qiZfU4dY1lWllzX7mPBI3,233712,https://www.youtube.com/watch?v=JGwWNGJdvx8,1000,5000
+,https://open.spotify.com/track/463CkQjx2Zk1yXoBuierM9,Levitating,Future Nostalgia,spotify:track:463CkQjx2Zk1yXoBuierM9,203807,https://www.youtube.com/watch?v=TUVcZfQe-Kw,800000000,6000000
+Taylor Swift,https://open.spotify.com/track/1BxfuPKGuaTgP7aM0Bbdwr,,Lover,spotify:track:1BxfuPKGuaTgP7aM0Bbdwr,221306,https://www.youtube.com/watch?v=-BjZmE2gtdo,1000000000,5000000
