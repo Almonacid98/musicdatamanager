@@ -6,7 +6,8 @@ def show_artist_info():
     artista = input("Ingrese el nombre del artista: ").strip()
     registros = load_songs()
 
-    albums = get_artist_album_info(artista, registros)
+    #nombre real + albums
+    real_name, albums = get_artist_album_info(artista, registros)
 
     if not albums:
         print(f"No se encontraron álbumes para el artista '{artista}'.")
@@ -14,7 +15,7 @@ def show_artist_info():
         clear_console()
         return
 
-    print(f"\nArtista: {artista}")
+    print(f"\nArtista: {real_name}")
     print(f"Cantidad de álbumes: {len(albums)}\n")
 
     for album, info in albums.items():
