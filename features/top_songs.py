@@ -6,7 +6,10 @@ def filter_songs_by_artist(songs, artist_name):
     result = []
 
     for song in songs:
-        if song.get("Artist", "").strip().lower() == artist_name.lower():
+        artist = song.get("Artist", "").strip()
+
+        #coincidencia parcial e ignorando mayúsculas
+        if artist_name.lower() in artist.lower():
             result.append(song)
 
     return result
