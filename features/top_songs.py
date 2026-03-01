@@ -53,7 +53,7 @@ def show_top10_by_artist():
         return
 
     # 2. constructor
-    top_songs = build_top_songs(filtered, artist_name)
+    top_songs = build_top_songs(filtered)
 
     # 3. orden
     top_songs = sort_by_views(top_songs)
